@@ -1,0 +1,8 @@
+.ftenv/
+__pycache__/
+outputs/
+data/
+*.pyc
+.ipynb_checkpoints/
+test.py
+.env
