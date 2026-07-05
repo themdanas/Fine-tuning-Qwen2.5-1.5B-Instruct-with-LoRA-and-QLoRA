@@ -1,11 +1,12 @@
 from trl import SFTTrainer
+from configs.train_config import lora_config,training_args
 
 def get_trainer(
     model,
     tokenizer,
     dataset,
-    training_args,
-    lora_config,
+    args,
+    peft_config,
 ):
     trainer = SFTTrainer(
         model=model,
