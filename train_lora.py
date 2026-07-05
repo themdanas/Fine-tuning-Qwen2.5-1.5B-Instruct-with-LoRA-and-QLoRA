@@ -15,7 +15,7 @@ dataset = load_training_dataset(tokenizer)
 
 trainer = get_trainer(
     model=model,
-    train_dataset=dataset,
+    dataset=dataset,
     args=training_args,
     processing_class=tokenizer,
     peft_config=lora_config,
