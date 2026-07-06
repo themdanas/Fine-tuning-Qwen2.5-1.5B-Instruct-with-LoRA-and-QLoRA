@@ -56,7 +56,7 @@ def generate(model, prompt):
             do_sample=True,
         )
 
-    generated = output[0][input["input_ids"].shape[1]:]
+    generated = output[0][inputs["input_ids"].shape[1]:]
 
     return tokenizer.decode(
         generated,
