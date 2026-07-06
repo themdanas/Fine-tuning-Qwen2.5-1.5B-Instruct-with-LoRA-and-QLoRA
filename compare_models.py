@@ -63,7 +63,7 @@ def generate(model, prompt):
         skip_special_tokens=True,
     )
 
-prompt = "Give three tips for staying healthy."
+prompt = "Explain quantum computing to a 10-year-old."
 
 print("=" * 80)
 print("BASE MODEL")
