@@ -45,7 +45,7 @@ def generate(model, prompt):
 
     inputs = tokenizer(
         text,
-        return_tensor="pt",
+        return_tensors="pt",
     ).to(model.device)
 
     with torch.no_grad():
