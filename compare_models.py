@@ -10,7 +10,7 @@ tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL)
 tokenizer.pad_token = tokenizer.eos_token
 
 #base model
-base_model = AutoModelForCausalLM(
+base_model = AutoModelForCausalLM.from_pretrained(
     BASE_MODEL,
     torch_dtype=torch.float16,
     device_map="auto",
