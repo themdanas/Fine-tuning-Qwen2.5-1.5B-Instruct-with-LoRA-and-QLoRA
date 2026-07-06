@@ -52,7 +52,7 @@ def generate(model, prompt):
         output = model.generate(
             **inputs,
             max_new_tokens=200,
-            temprature=0.7,
+            temperature=0.7,
             do_sample=True,
         )
 
